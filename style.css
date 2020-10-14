@@ -1,0 +1,32 @@
+/*Resentando estilos*/
+* {	margin: 0; padding: 0; }
+
+@font-face {
+     font-family: PoppinsSemiBold;
+     src: url('src/fonte/Poppins-SemiBold.ttf');
+}
+
+section#home {
+	background-image: url('src/images/image--005.png');
+	background-size: cover;
+	color: #fff;
+	height: 100vh;
+	overflow: hidden;
+	display: flex;
+	flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+section p {
+	font: 60px PoppinsSemiBold;
+}
+
+section button {
+	background-color: #fff;
+	text-transform: uppercase;
+	padding: 15px 80px;
+	font-weight: bold;
+	font: 15px PoppinsSemiBold;
+	color: #333;
+}
