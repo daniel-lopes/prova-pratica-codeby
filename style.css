@@ -46,9 +46,9 @@ section .main-btn {
 }
 
 section#categories {
-	width: 80%;
-	/*background-color: red;*/
+	width: 85%;
 	margin: 40px auto;
+	margin-bottom: 100px;
 }
 
 section#categories h1 {
@@ -58,7 +58,7 @@ section#categories h1 {
 section#categories h2 {
 	font-size: 20px;
 	font-weight: bold;
-	margin-bottom: 30px;
+	margin-bottom: 45px;
 }
 
 #posts {
@@ -76,29 +76,48 @@ section#categories h2 {
 	font-size: 20px;
 }
 
+#rows {
+	display: flex;
+	flex-grow: 1;
+}
+
+.card {
+	display: flex;
+	flex-direction: column;
+	background-size: cover;
+	background-repeat: no-repeat;
+	min-height: 320px;
+	max-height: 320px;
+	padding-top: 20px;
+	padding-left: 30px;
+	padding-right: 30px;
+}
+
 #nature {
-	background-image: url('src/images/fundo-nature');
-	max-width: 50%;
+	background-image: url('src/images/fundo-nature.png');
+	flex-grow: 1;
 }
 
 #daily {
-	background-image: url('src/images/fundo-daily');
-	max-width: 50%;
+	background-image: url('src/images/fundo-daily.png');
+	flex-grow: 3;
 }
 
 #together {
-	background-image: url('src/images/fundo-together');
-	width: 100%;
+	background-image: url('src/images/fundo-together.png');
+	justify-content: center;
+	flex-grow: 4;
 }
 
 #analysis {
-	background-image: url('src/images/fundo-analysis');
-	max-width: 50%;
+	background-image: url('src/images/fundo-analysis.png');
+	align-items: flex-end;
+	flex-grow: 3;
 }
 
 #pictures {
-	background-image: url('src/images/fundo-pctures');
-	max-width: 50%;
+	background-image: url('src/images/fundo-pictures.png');
+	flex-grow: 1;
 }
 
 .m-r-30 {
@@ -108,3 +127,25 @@ section#categories h2 {
 .m-b-30 {
 	margin-bottom: 30px;
 }
+
+section#graphics {
+	background-color: #f4f4f4;
+	width: 85%;
+	margin: 0 auto;
+}
+
+section#graphics .rows {
+	display: flex;
+	flex-direction: row;
+	justify-content: space-between;
+}
+
+.graphic {
+	width: 175px;
+	color: #fff;
+}
+
+.plan {
+	background-color: #005499;
+}
+
