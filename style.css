@@ -6,8 +6,17 @@
      src: url('src/fonte/Poppins-SemiBold.ttf');
 }
 
+@font-face {
+     font-family: PoppinsBold;
+     src: url('src/fonte/Poppins-Bold.ttf');
+}
+
+body {
+	font-family: PoppinsSemiBold;
+}
+
 section#home {
-	background-image: url('src/images/image--005.png');
+	background-image: url('src/images/fundo-home.png');
 	background-size: cover;
 	color: #fff;
 	height: 100vh;
@@ -18,15 +27,84 @@ section#home {
     justify-content: center;
 }
 
-section p {
-	font: 60px PoppinsSemiBold;
+section#home p {
+	/*font: 60px PoppinsSemiBold;*/
+	font-size: 60px;
+	line-height: 75px;
 }
 
-section button {
-	background-color: #fff;
-	text-transform: uppercase;
-	padding: 15px 80px;
+section .main-btn {
+    background-color: #fff;
+    text-transform: uppercase;
+    padding: 11px 83px;
+    padding-top: 13px;
+    font-weight: 700;
+    font: 17px PoppinsBold;
+    color: #383838;
+    border: 0px;
+    margin-top: 60px;
+}
+
+section#categories {
+	width: 80%;
+	/*background-color: red;*/
+	margin: 40px auto;
+}
+
+section#categories h1 {
+	font-size: 50px;
+}
+
+section#categories h2 {
+	font-size: 20px;
 	font-weight: bold;
-	font: 15px PoppinsSemiBold;
-	color: #333;
+	margin-bottom: 30px;
+}
+
+#posts {
+	display: flex;
+	flex-wrap: wrap;
+	color: #fff;
+}
+
+#posts h2 {
+	font-size: 50px !important;
+	margin-bottom: 5px !important;
+}
+
+#posts p {
+	font-size: 20px;
+}
+
+#nature {
+	background-image: url('src/images/fundo-nature');
+	max-width: 50%;
+}
+
+#daily {
+	background-image: url('src/images/fundo-daily');
+	max-width: 50%;
+}
+
+#together {
+	background-image: url('src/images/fundo-together');
+	width: 100%;
+}
+
+#analysis {
+	background-image: url('src/images/fundo-analysis');
+	max-width: 50%;
+}
+
+#pictures {
+	background-image: url('src/images/fundo-pctures');
+	max-width: 50%;
+}
+
+.m-r-30 {
+	margin-right: 30px;
+}
+
+.m-b-30 {
+	margin-bottom: 30px;
 }
