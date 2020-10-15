@@ -11,8 +11,14 @@
      src: url('src/fonte/Poppins-Bold.ttf');
 }
 
+@font-face {
+     font-family: PoppinsLight;
+     src: url('src/fonte/Poppins-Light.ttf');
+}
+
 body {
 	font-family: PoppinsSemiBold;
+	color: #383838;
 }
 
 section#home {
@@ -130,8 +136,22 @@ section#categories h2 {
 
 section#graphics {
 	background-color: #f4f4f4;
+}
+
+section#graphics .container {
 	width: 85%;
 	margin: 0 auto;
+}
+
+section#graphics .title {
+    position: relative;
+	font-size: 50px;
+    top: 100px;
+}
+
+section#graphics h3 {
+    position: relative;
+	top: 100px;
 }
 
 section#graphics .rows {
@@ -141,11 +161,43 @@ section#graphics .rows {
 }
 
 .graphic {
-	width: 175px;
+	width: 165px;
 	color: #fff;
+	margin-bottom: 100px;
+	display: flex;
+	flex-direction: column;
+	justify-content: flex-end;
 }
 
 .plan {
 	background-color: #005499;
+	padding-left: 20px;
+	padding-top: 20px;
+	padding-bottom: 15px;
 }
 
+.plan h2 {
+	font-size: 35px;
+	line-height: 30px;
+}
+
+.plan span {
+	font-size: 20px;
+}
+
+.graphic p {
+	background-color: #0088ed;
+	font-size: 12px;
+	font-family: PoppinsLight;
+	padding: 15px;
+	line-height: 15px;
+	display: flex;
+	flex-direction: column;
+	justify-content: flex-end;
+}
+
+.graphic2 p { height: 100px; }
+.graphic3 p { height: 150px; }
+.graphic4 p { height: 200px; }
+.graphic5 p { height: 250px; }
+.graphic6 p { height: 300px; }
