@@ -4,7 +4,7 @@
 Esse repositório possui o teste da CodeBy para avaliar as habilidades de lógica do candidato em questão.
 
 ## Como testar?
-Para testar seu código, basta apenas rodar o seguinte comando:
+Para testar basta apenas rodar o seguinte comando:
 ```bash
 yarn test
 ```
