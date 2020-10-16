@@ -1,19 +1,18 @@
-/*Resentando estilos*/
 * {	margin: 0; padding: 0; }
 
 @font-face {
      font-family: PoppinsSemiBold;
-     src: url('src/fonte/Poppins-SemiBold.ttf');
+     src: url('../fonte/Poppins-SemiBold.ttf');
 }
 
 @font-face {
      font-family: PoppinsBold;
-     src: url('src/fonte/Poppins-Bold.ttf');
+     src: url('../fonte/Poppins-Bold.ttf');
 }
 
 @font-face {
      font-family: PoppinsLight;
-     src: url('src/fonte/Poppins-Light.ttf');
+     src: url('../fonte/Poppins-Light.ttf');
 }
 
 body {
@@ -22,7 +21,7 @@ body {
 }
 
 section#home {
-	background-image: url('src/images/fundo-home.png');
+	background-image: url('../images/fundo-home.png');
 	background-size: cover;
 	color: #fff;
 	height: 100vh;
@@ -52,14 +51,23 @@ section#home h1 {
 section .main-btn {
     background-color: #fff;
     text-transform: uppercase;
-    padding: 11px 83px;
-    padding-top: 13px;
+    padding: 10px 82px;
+    padding-top: 12px;
     font-weight: 700;
     font: 17px PoppinsBold;
     color: #383838;
-    border: 0px;
     margin-top: 60px;
+    transition: all .6s;
+    border: solid 1px #fff;
 }
+
+section .main-btn:hover {
+    background-color: #00499e;
+    color: #fff;
+    margin-top: 60px;
+    border: solid 1px;
+    box-shadow: 5px 5px 12px #080808;
+ }
 
 section#categories {
 	width: 85%;
@@ -95,6 +103,7 @@ section#categories span {
 #rows {
 	display: flex;
 	flex-grow: 1;
+	flex-wrap: wrap;
 }
 
 .card {
@@ -107,32 +116,43 @@ section#categories span {
 	padding-top: 20px;
 	padding-left: 30px;
 	padding-right: 30px;
+	overflow: hidden;
+	background-size: 100% 100%;
+	transition: background-size .5s ease-in;
+	-moz-transition: background-size .5s ease-in;
+	-ms-transition: background-size .5s ease-in;
+	-o-transition: background-size .5s ease-in;
+	-webkit-transition: background-size .5s ease-in;
+}
+
+.card:hover {
+	background-size: 120% 120%;
 }
 
 #nature {
-	background-image: url('src/images/fundo-nature.png');
+	background-image: url('../images/fundo-nature.png');
 	flex-grow: 1;
 }
 
 #daily {
-	background-image: url('src/images/fundo-daily.png');
+	background-image: url('../images/fundo-daily.png');
 	flex-grow: 3;
 }
 
 #together {
-	background-image: url('src/images/fundo-together.png');
+	background-image: url('../images/fundo-together.png');
 	justify-content: center;
 	flex-grow: 4;
 }
 
 #analysis {
-	background-image: url('src/images/fundo-analysis.png');
+	background-image: url('../images/fundo-analysis.png');
 	align-items: flex-end;
 	flex-grow: 3;
 }
 
 #pictures {
-	background-image: url('src/images/fundo-pictures.png');
+	background-image: url('../images/fundo-pictures.png');
 	flex-grow: 1;
 }
 
@@ -172,6 +192,7 @@ section#graphics .rows {
 	display: flex;
 	flex-direction: row;
 	justify-content: space-between;
+	flex-wrap: wrap;
 }
 
 .graphic {
@@ -215,3 +236,41 @@ section#graphics .rows {
 .graphic4 p { height: 200px; }
 .graphic5 p { height: 250px; }
 .graphic6 p { height: 300px; }
+
+@media(max-width: 1012px){
+	section#graphics h3 {
+		margin-bottom: 120px;
+	}
+}
+
+/*animação home*/
+.ityped-cursor {
+    font-size: 50px;
+    opacity: 1;
+    -webkit-animation: blink 0.3s infinite;
+    -moz-animation: blink 0.3s infinite;
+    animation: blink 0.3s infinite;
+    animation-direction: alternate;
+}
+
+.finished {
+	opacity: 0;
+}
+
+@keyframes blink {
+    100% {
+        opacity: 0;
+    }
+}
+
+@-webkit-keyframes blink {
+    100% {
+        opacity: 0;
+    }
+}
+
+@-moz-keyframes blink {
+    100% {
+        opacity: 0;
+    }
+}
